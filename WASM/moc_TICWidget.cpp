@@ -48,8 +48,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MSAB__TICSpectrumWidget_t {
-    const uint offsetsAndSize[30];
-    char stringdata0[258];
+    const uint offsetsAndSize[32];
+    char stringdata0[276];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MSAB__TICSpectrumWidget_t, stringdata0) + ofs), len 
@@ -69,7 +69,8 @@ QT_MOC_LITERAL(134, 43), // "QMap<QString,QSharedPointer<C..."
 QT_MOC_LITERAL(178, 11), // "newValueMap"
 QT_MOC_LITERAL(190, 22), // "currentlySelectedGroup"
 QT_MOC_LITERAL(213, 20), // "ShowCompositeSpectra"
-QT_MOC_LITERAL(234, 23) // "IntegrationInfoComplete"
+QT_MOC_LITERAL(234, 17), // "ShowChromatograms"
+QT_MOC_LITERAL(252, 23) // "IntegrationInfoComplete"
 
     },
     "MSAB::TICSpectrumWidget\0SpectraSelected\0"
@@ -78,7 +79,8 @@ QT_MOC_LITERAL(234, 23) // "IntegrationInfoComplete"
     "RefreshAllSeries\0SetCurrentModel\0"
     "QMap<QString,QSharedPointer<CompoundGroup>>\0"
     "newValueMap\0currentlySelectedGroup\0"
-    "ShowCompositeSpectra\0IntegrationInfoComplete"
+    "ShowCompositeSpectra\0ShowChromatograms\0"
+    "IntegrationInfoComplete"
 };
 #undef QT_MOC_LITERAL
 
@@ -88,7 +90,7 @@ static const uint qt_meta_data_MSAB__TICSpectrumWidget[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -96,16 +98,17 @@ static const uint qt_meta_data_MSAB__TICSpectrumWidget[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   62,    2, 0x06,    1 /* Public */,
+       1,    1,   68,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       4,    2,   65,    2, 0x0a,    3 /* Public */,
-       4,    1,   70,    2, 0x2a,    6 /* Public | MethodCloned */,
-       6,    1,   73,    2, 0x0a,    8 /* Public */,
-       8,    0,   76,    2, 0x0a,   10 /* Public */,
-       9,    2,   77,    2, 0x0a,   11 /* Public */,
-      13,    0,   82,    2, 0x0a,   14 /* Public */,
-      14,    0,   83,    2, 0x0a,   15 /* Public */,
+       4,    2,   71,    2, 0x0a,    3 /* Public */,
+       4,    1,   76,    2, 0x2a,    6 /* Public | MethodCloned */,
+       6,    1,   79,    2, 0x0a,    8 /* Public */,
+       8,    0,   82,    2, 0x0a,   10 /* Public */,
+       9,    2,   83,    2, 0x0a,   11 /* Public */,
+      13,    0,   88,    2, 0x0a,   14 /* Public */,
+      14,    0,   89,    2, 0x0a,   15 /* Public */,
+      15,    0,   90,    2, 0x0a,   16 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int,    3,
@@ -116,6 +119,7 @@ static const uint qt_meta_data_MSAB__TICSpectrumWidget[] = {
     QMetaType::Void, QMetaType::QReal,    7,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 10, QMetaType::QString,   11,   12,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -137,7 +141,8 @@ void MSAB::TICSpectrumWidget::qt_static_metacall(QObject *_o, QMetaObject::Call 
         case 4: _t->RefreshAllSeries(); break;
         case 5: _t->SetCurrentModel((*reinterpret_cast< QMap<QString,QSharedPointer<CompoundGroup>>(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 6: _t->ShowCompositeSpectra(); break;
-        case 7: _t->IntegrationInfoComplete(); break;
+        case 7: _t->ShowChromatograms(); break;
+        case 8: _t->IntegrationInfoComplete(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -160,7 +165,7 @@ const QMetaObject MSAB::TICSpectrumWidget::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_MSAB__TICSpectrumWidget_t
 , QtPrivate::TypeAndForceComplete<TICSpectrumWidget, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>
-, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<qreal, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QMap<QString,QSharedPointer<CompoundGroup>>, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<qreal, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QMap<QString,QSharedPointer<CompoundGroup>>, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -187,13 +192,13 @@ int MSAB::TICSpectrumWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

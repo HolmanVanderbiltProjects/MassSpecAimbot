@@ -53,6 +53,7 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
+		../MassSpecAimbot/Dialog/ChromatagramWidget.cpp \
 		../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp \
 		../MassSpecAimbot/Dialog/IntegrationWindow.cpp \
 		../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp \
@@ -63,6 +64,7 @@ SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
 		../MassSpecAimbot/Dialog/exportfiledialog.cpp \
 		../MassSpecAimbot/Utility/BinaryHandler.cpp \
 		../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.cpp \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.cpp \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.cpp \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.cpp \
@@ -72,6 +74,7 @@ SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.cpp \
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.cpp \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.cpp \
+		../MassSpecAimbot/Utility/ExampleFile.cpp \
 		../MassSpecAimbot/Utility/FileReader/CSVHelper.cpp \
 		../MassSpecAimbot/Utility/FileReader/XCMSFile.cpp \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.cpp \
@@ -81,6 +84,7 @@ SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
 		../MassSpecAimbot/main.cpp \
 		../MassSpecAimbot/mainwindow.cpp /home/jay/Code/QTCreator/MassSpecAimbot-WASM/build-MassSpecAimbot-Qt_6_2_0_WebAssembly-Release/massspecaimbot.js_plugin_import.cpp \
 		moc_ChartView.cpp \
+		moc_ChromatagramWidget.cpp \
 		moc_CompoundGroupWidget.cpp \
 		moc_IntegrationWindow.cpp \
 		moc_NewCompoundGroupIonWindow.cpp \
@@ -93,6 +97,7 @@ SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
 		moc_CompoundGroupModel.cpp \
 		moc_mainwindow.cpp
 OBJECTS       = ChartView.o \
+		ChromatagramWidget.o \
 		CompoundGroupWidget.o \
 		IntegrationWindow.o \
 		NewCompoundGroupIonWindow.o \
@@ -103,6 +108,7 @@ OBJECTS       = ChartView.o \
 		exportfiledialog.o \
 		BinaryHandler.o \
 		Chemestry.o \
+		Chromatogram.o \
 		CompoundGroup.o \
 		CompoundGroupIon.o \
 		CompoundGroupModel.o \
@@ -112,6 +118,7 @@ OBJECTS       = ChartView.o \
 		ModifiedIon.o \
 		MSABExperiment.o \
 		Spectra.o \
+		ExampleFile.o \
 		CSVHelper.o \
 		XCMSFile.o \
 		mzMLReader.o \
@@ -122,6 +129,7 @@ OBJECTS       = ChartView.o \
 		mainwindow.o \
 		massspecaimbot.js_plugin_import.o \
 		moc_ChartView.o \
+		moc_ChromatagramWidget.o \
 		moc_CompoundGroupWidget.o \
 		moc_IntegrationWindow.o \
 		moc_NewCompoundGroupIonWindow.o \
@@ -323,6 +331,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		/opt/Qt/6.2.0/wasm_32/mkspecs/features/yacc.prf \
 		/opt/Qt/6.2.0/wasm_32/mkspecs/features/lex.prf \
 		../MassSpecAimbot/MassSpecAimbot.pro ../MassSpecAimbot/Dialog/ChartView.h \
+		../MassSpecAimbot/Dialog/ChromatagramWidget.h \
 		../MassSpecAimbot/Dialog/CompoundGroupWidget.h \
 		../MassSpecAimbot/Dialog/IntegrationWindow.h \
 		../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.h \
@@ -333,6 +342,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		../MassSpecAimbot/Dialog/exportfiledialog.h \
 		../MassSpecAimbot/Utility/BinaryHandler.h \
 		../MassSpecAimbot/Utility/DataContainer/Chemestry.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
@@ -342,6 +352,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h \
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
+		../MassSpecAimbot/Utility/ExampleFile.h \
 		../MassSpecAimbot/Utility/FileReader/CSVHelper.h \
 		../MassSpecAimbot/Utility/FileReader/XCMSFile.h \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.h \
@@ -349,6 +360,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		../MassSpecAimbot/Utility/Golay.h \
 		../MassSpecAimbot/Utility/MethodFileHandler.h \
 		../MassSpecAimbot/mainwindow.h ../MassSpecAimbot/Dialog/ChartView.cpp \
+		../MassSpecAimbot/Dialog/ChromatagramWidget.cpp \
 		../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp \
 		../MassSpecAimbot/Dialog/IntegrationWindow.cpp \
 		../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp \
@@ -359,6 +371,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		../MassSpecAimbot/Dialog/exportfiledialog.cpp \
 		../MassSpecAimbot/Utility/BinaryHandler.cpp \
 		../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.cpp \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.cpp \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.cpp \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.cpp \
@@ -368,6 +381,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.cpp \
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.cpp \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.cpp \
+		../MassSpecAimbot/Utility/ExampleFile.cpp \
 		../MassSpecAimbot/Utility/FileReader/CSVHelper.cpp \
 		../MassSpecAimbot/Utility/FileReader/XCMSFile.cpp \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.cpp \
@@ -818,8 +832,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /opt/Qt/6.2.0/wasm_32/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.h ../MassSpecAimbot/Dialog/CompoundGroupWidget.h ../MassSpecAimbot/Dialog/IntegrationWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.h ../MassSpecAimbot/Dialog/SpectraFileHandler.h ../MassSpecAimbot/Dialog/TICWidget.h ../MassSpecAimbot/Dialog/blankwindow.h ../MassSpecAimbot/Dialog/exportfiledialog.h ../MassSpecAimbot/Utility/BinaryHandler.h ../MassSpecAimbot/Utility/DataContainer/Chemestry.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h ../MassSpecAimbot/Utility/DataContainer/Spectra.h ../MassSpecAimbot/Utility/FileReader/CSVHelper.h ../MassSpecAimbot/Utility/FileReader/XCMSFile.h ../MassSpecAimbot/Utility/FileReader/mzMLReader.h ../MassSpecAimbot/Utility/FileReader/mzXMLReader.h ../MassSpecAimbot/Utility/Golay.h ../MassSpecAimbot/Utility/MethodFileHandler.h ../MassSpecAimbot/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.cpp ../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp ../MassSpecAimbot/Dialog/IntegrationWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.cpp ../MassSpecAimbot/Dialog/SpectraFileHandler.cpp ../MassSpecAimbot/Dialog/TICWidget.cpp ../MassSpecAimbot/Dialog/blankwindow.cpp ../MassSpecAimbot/Dialog/exportfiledialog.cpp ../MassSpecAimbot/Utility/BinaryHandler.cpp ../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.cpp ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.cpp ../MassSpecAimbot/Utility/DataContainer/Spectra.cpp ../MassSpecAimbot/Utility/FileReader/CSVHelper.cpp ../MassSpecAimbot/Utility/FileReader/XCMSFile.cpp ../MassSpecAimbot/Utility/FileReader/mzMLReader.cpp ../MassSpecAimbot/Utility/FileReader/mzXMLReader.cpp ../MassSpecAimbot/Utility/Golay.cpp ../MassSpecAimbot/Utility/MethodFileHandler.cpp ../MassSpecAimbot/main.cpp ../MassSpecAimbot/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.h ../MassSpecAimbot/Dialog/ChromatagramWidget.h ../MassSpecAimbot/Dialog/CompoundGroupWidget.h ../MassSpecAimbot/Dialog/IntegrationWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.h ../MassSpecAimbot/Dialog/SpectraFileHandler.h ../MassSpecAimbot/Dialog/TICWidget.h ../MassSpecAimbot/Dialog/blankwindow.h ../MassSpecAimbot/Dialog/exportfiledialog.h ../MassSpecAimbot/Utility/BinaryHandler.h ../MassSpecAimbot/Utility/DataContainer/Chemestry.h ../MassSpecAimbot/Utility/DataContainer/Chromatogram.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h ../MassSpecAimbot/Utility/DataContainer/Spectra.h ../MassSpecAimbot/Utility/ExampleFile.h ../MassSpecAimbot/Utility/FileReader/CSVHelper.h ../MassSpecAimbot/Utility/FileReader/XCMSFile.h ../MassSpecAimbot/Utility/FileReader/mzMLReader.h ../MassSpecAimbot/Utility/FileReader/mzXMLReader.h ../MassSpecAimbot/Utility/Golay.h ../MassSpecAimbot/Utility/MethodFileHandler.h ../MassSpecAimbot/mainwindow.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.cpp ../MassSpecAimbot/Dialog/ChromatagramWidget.cpp ../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp ../MassSpecAimbot/Dialog/IntegrationWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.cpp ../MassSpecAimbot/Dialog/SpectraFileHandler.cpp ../MassSpecAimbot/Dialog/TICWidget.cpp ../MassSpecAimbot/Dialog/blankwindow.cpp ../MassSpecAimbot/Dialog/exportfiledialog.cpp ../MassSpecAimbot/Utility/BinaryHandler.cpp ../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp ../MassSpecAimbot/Utility/DataContainer/Chromatogram.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.cpp ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.cpp ../MassSpecAimbot/Utility/DataContainer/Spectra.cpp ../MassSpecAimbot/Utility/ExampleFile.cpp ../MassSpecAimbot/Utility/FileReader/CSVHelper.cpp ../MassSpecAimbot/Utility/FileReader/XCMSFile.cpp ../MassSpecAimbot/Utility/FileReader/mzMLReader.cpp ../MassSpecAimbot/Utility/FileReader/mzXMLReader.cpp ../MassSpecAimbot/Utility/Golay.cpp ../MassSpecAimbot/Utility/MethodFileHandler.cpp ../MassSpecAimbot/main.cpp ../MassSpecAimbot/mainwindow.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -871,9 +885,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /opt/Qt/6.2.0/wasm_32/mkspecs/features/data/dummy.cpp
 	em++ -pipe -O2 -std=gnu++1z -s ALLOW_MEMORY_GROWTH=1 -Wall -Wextra -dM -E -o moc_predefs.h /opt/Qt/6.2.0/wasm_32/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_ChartView.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
+compiler_moc_header_make_all: moc_ChartView.cpp moc_ChromatagramWidget.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_ChartView.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
+	-$(DEL_FILE) moc_ChartView.cpp moc_ChromatagramWidget.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
 moc_ChartView.cpp: ../MassSpecAimbot/Dialog/ChartView.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgetsDepends \
@@ -1468,6 +1482,7 @@ moc_ChartView.cpp: ../MassSpecAimbot/Dialog/ChartView.h \
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -1481,6 +1496,621 @@ moc_ChartView.cpp: ../MassSpecAimbot/Dialog/ChartView.h \
 		moc_predefs.h \
 		/opt/Qt/6.2.0/gcc_64/libexec/moc
 	/opt/Qt/6.2.0/gcc_64/libexec/moc $(DEFINES) --include /home/jay/Code/QTCreator/MassSpecAimbot-WASM/build-MassSpecAimbot-Qt_6_2_0_WebAssembly-Release/moc_predefs.h -I/opt/Qt/6.2.0/wasm_32/mkspecs/wasm-emscripten -I/home/jay/Code/QTCreator/MassSpecAimbot-WASM/MassSpecAimbot -I/opt/Qt/6.2.0/wasm_32/include -I/opt/Qt/6.2.0/wasm_32/include/QtCharts -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGL -I/opt/Qt/6.2.0/wasm_32/include/QtGui -I/opt/Qt/6.2.0/wasm_32/include/QtCore -I. ../MassSpecAimbot/Dialog/ChartView.h -o moc_ChartView.cpp
+
+moc_ChromatagramWidget.cpp: ../MassSpecAimbot/Dialog/ChromatagramWidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgetsDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCore \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCoreDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig-bootstrapped.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtcore-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsystemdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qprocessordetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcompilerdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtypeinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainerfwd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsysinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlogging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qflags.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbasicatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_bootstrap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qgenericatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_cxx11.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobalstatic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnumeric.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qversiontagging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnamespace.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtmetamacros.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstring.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qchar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrefcount.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpair.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydatapointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydataops.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainertools_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringliteral.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qanystringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qutf8stringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringtokenizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringbuilder.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qhashfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearraylist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringmatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetatype.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcompare.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvarlengtharray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopeguard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdatastream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiodevicebase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetacontainer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainerinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtaggedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmath.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobject_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qproperty.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qshareddata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpropertyprivate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstracteventdispatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qeventloop.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractitemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qhash.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvariant.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qshareddata_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdebug.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtextstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringconverter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontiguouscache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractnativeeventfilter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qapplicationpermission.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qassociativeiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbasictimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbitarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbuffer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiodevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearraymatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcalendar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlocale.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborvalue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdatetime.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborcommon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qregularexpression.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qurl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/quuid.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcbormap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstreamreader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfloat16.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstreamwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcollator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcommandlineoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcommandlineparser.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfutureinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qresultstore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuture_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthreadpool.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthread.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdeadlinetimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qelapsedtimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrunnable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qexception.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnativeinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qloggingcategory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreapplication_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcryptographichash.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdir.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfiledevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfileinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdiriterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qeasingcurve.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qendian.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfactoryinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfileselector.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QObject \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QStringList \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfilesystemwatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuturesynchronizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuturewatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qidentityproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qitemselectionmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjnienvironment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QScopedPointer \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjniobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonvalue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsondocument.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlibrary.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlibraryinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qversionnumber.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qline.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpoint.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlockfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmargins.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmessageauthenticationcode.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetaobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimedata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimedatabase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimetype.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectcleanuphandler.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qoperatingsystemversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qparallelanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpauseanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpluginloader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qprocess.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpromise.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpropertyanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvariantanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qqueue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrandom.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qreadwritelock.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrect.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsize.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qresource.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsavefile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopedvaluerollback.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsemaphore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsequentialanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsequentialiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsettings.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedmemory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsignalmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsimd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsocketnotifier.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsortfilterproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstandardpaths.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstorageinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringlistmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsystemsemaphore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtemporarydir.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtemporaryfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtextboundaryfinder.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthreadstorage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimeline.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimezone.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtranslator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtransposeproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qurlquery.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvector.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qwaitcondition.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QDeadlineTimer \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qwineventnotifier.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qxmlstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtcoreversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QtGui \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QtGuiDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qabstractfileiconprovider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qicon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindowdefs.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindowdefs_win.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgb.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgba64.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixelformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpolygon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qregion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qeventpoint.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector2d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvectornd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpointingdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qinputdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qscreen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRect \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSize \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSizeF \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QTransform \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qkeysequence.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qglyphrun.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrawfont.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfont.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontdatabase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextcursor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbrush.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocument.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpalette.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessible.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessiblebridge.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessibleobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessibleplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qactiongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbackingstore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QEvent \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMargins \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsurface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsurfaceformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcursor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbitmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qclipboard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolorspace.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolortransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qdesktopservices.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qdrag.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfilesystemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontmetrics.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericmatrix.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericpluginfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qguiapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qinputmethod.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qguiapplication_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qiconengine.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qiconengineplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimageiohandler.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimagereader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimagewriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qmatrix4x4.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector3d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector4d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qquaternion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qmovie.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qoffscreensurface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qoffscreensurface_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopengl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qt_windows.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopengles2ext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglcontext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QSurfaceFormat \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglcontext_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglextrafunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagedpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagelayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagesize.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpageranges.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintdevicewindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QWindow \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPaintDevice \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintengine.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpainter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpainterpath.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpdfwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpicture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixmapcache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrasterwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPaintDeviceWindow \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgbafloat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsessionmanager.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qshortcut.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstandarditemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstatictext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstylehints.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsyntaxhighlighter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocumentfragment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocumentwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtexttable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qundogroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qundostack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvalidator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtguiversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsizepolicy.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractitemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractspinbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qslider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractslider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtabbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtabwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qrubberband.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qframe.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qaccessiblewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QAction \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qactiongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QActionGroup \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qboxlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgridlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qbuttongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcalendarwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcheckbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolordialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolormap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolumnview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcombobox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcommandlinkbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qpushbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcommonstyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcompleter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdatawidgetmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdatetimeedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdial.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdialogbuttonbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdockwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdrawutil.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qerrormessage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfiledialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfileiconprovider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfilesystemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QFileSystemModel \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfocusframe.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfontcombobox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfontdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qformlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QLayout \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgesture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgesturerecognizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsanchorlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslayoutitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicseffect.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsgridlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsitemanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslinearlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsproxywidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicswidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsscene.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicssceneevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicstransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QVector3D \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QMatrix4x4 \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgroupbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qheaderview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qinputdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlineedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qitemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qitemeditorfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qkeysequenceedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlabel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlcdnumber.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlistview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlistwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmainwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmdiarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmdisubwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmenu.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmenubar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmessagebox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtextedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qprogressbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qprogressdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qproxystyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QCommonStyle \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qradiobutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscroller.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QPointF \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QScrollerProperties \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollerproperties.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMetaType \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QVariant \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qshortcut.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QShortcut \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsizegrip.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qspinbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsplashscreen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsplitter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstackedlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstackedwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstatusbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleditemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstylefactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstylepainter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsystemtrayicon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtableview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtablewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtextbrowser.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtooltip.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreeview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreewidgetitemiterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundogroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QUndoGroup \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundostack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QUndoStack \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundoview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwhatsthis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwidgetaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwizard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgetsversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QChart \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qchart.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAbstractSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qabstractseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QChartGlobal \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qchartglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qtcharts-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAbstractAxis \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qabstractaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPen \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QFont \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLegend \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlegend.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QGraphicsWidget \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QBrush \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QChartView \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qchartview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QGraphicsView \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QValueAxis \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvalueaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLineSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlineseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QXYSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qxyseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QImage \
+		../MassSpecAimbot/Dialog/ChartView.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QtCharts \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QtChartsDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/QtOpenGL \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/QtOpenGLDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qtopenglglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglbuffer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengldebug.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglframebufferobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglpixeltransferoptions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSharedDataPointer \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglshaderprogram.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengltexture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengltextureblitter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QMatrix3x3 \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengltimerquery.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglversionfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglversionfunctionsfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglversionprofile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QPair \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglvertexarrayobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QOpenGLContext \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qtopenglversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/QtOpenGLWidgets \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/QtOpenGLWidgetsDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/qopenglwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QWidget \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/qtopenglwidgetsversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qabstractbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qarealegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLegendMarker \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAreaSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qareaseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarcategoryaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarlegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAbstractBarSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBarSet \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxplotlegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBoxPlotSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxplotseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBoxSet \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxplotmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlesticklegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QCandlestickSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlestickseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlestickmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlestickset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcategoryaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcoloraxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qdatetimeaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhbarmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBarModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhboxplotmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBoxPlotModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhcandlestickmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QCandlestickModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhorizontalbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhorizontalpercentbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhorizontalstackedbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhpiemodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QPieModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpiemodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhxymodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QXYModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qxymodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlogvalueaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpercentbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpielegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QPieSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpieseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QPieSlice \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpieslice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpolarchart.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qscatterseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qsplineseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qstackedbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvbarmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvboxplotmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvcandlestickmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvpiemodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvxymodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qxylegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qtchartsversion.h \
+		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
+		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.h \
+		../MassSpecAimbot/Utility/DataContainer/Chemestry.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QString \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h \
+		../MassSpecAimbot/Dialog/TICWidget.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
+		moc_predefs.h \
+		/opt/Qt/6.2.0/gcc_64/libexec/moc
+	/opt/Qt/6.2.0/gcc_64/libexec/moc $(DEFINES) --include /home/jay/Code/QTCreator/MassSpecAimbot-WASM/build-MassSpecAimbot-Qt_6_2_0_WebAssembly-Release/moc_predefs.h -I/opt/Qt/6.2.0/wasm_32/mkspecs/wasm-emscripten -I/home/jay/Code/QTCreator/MassSpecAimbot-WASM/MassSpecAimbot -I/opt/Qt/6.2.0/wasm_32/include -I/opt/Qt/6.2.0/wasm_32/include/QtCharts -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGL -I/opt/Qt/6.2.0/wasm_32/include/QtGui -I/opt/Qt/6.2.0/wasm_32/include/QtCore -I. ../MassSpecAimbot/Dialog/ChromatagramWidget.h -o moc_ChromatagramWidget.cpp
 
 moc_CompoundGroupWidget.cpp: ../MassSpecAimbot/Dialog/CompoundGroupWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
@@ -2574,6 +3204,7 @@ moc_IntegrationWindow.cpp: ../MassSpecAimbot/Dialog/IntegrationWindow.h \
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -2595,6 +3226,8 @@ moc_IntegrationWindow.cpp: ../MassSpecAimbot/Dialog/IntegrationWindow.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QProgressBar \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.h \
 		../MassSpecAimbot/Utility/FileReader/mzXMLReader.h \
+		../MassSpecAimbot/Utility/ExampleFile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QThread \
 		../MassSpecAimbot/Utility/FileReader/CSVHelper.h \
 		moc_predefs.h \
@@ -3779,6 +4412,7 @@ moc_SpectraFileHandler.cpp: ../MassSpecAimbot/Dialog/SpectraFileHandler.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcalendar.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h \
@@ -4107,6 +4741,8 @@ moc_SpectraFileHandler.cpp: ../MassSpecAimbot/Dialog/SpectraFileHandler.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.h \
 		../MassSpecAimbot/Utility/FileReader/mzXMLReader.h \
+		../MassSpecAimbot/Utility/ExampleFile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QThread \
 		moc_predefs.h \
 		/opt/Qt/6.2.0/gcc_64/libexec/moc
@@ -4709,6 +5345,7 @@ moc_TICWidget.cpp: ../MassSpecAimbot/Dialog/TICWidget.h \
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -4864,6 +5501,7 @@ moc_blankwindow.cpp: ../MassSpecAimbot/Dialog/blankwindow.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlocale.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -7650,6 +8288,7 @@ ChartView.o: ../MassSpecAimbot/Dialog/ChartView.cpp ../MassSpecAimbot/Dialog/Cha
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -7661,6 +8300,620 @@ ChartView.o: ../MassSpecAimbot/Dialog/ChartView.cpp ../MassSpecAimbot/Dialog/Cha
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QString \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ChartView.o ../MassSpecAimbot/Dialog/ChartView.cpp
+
+ChromatagramWidget.o: ../MassSpecAimbot/Dialog/ChromatagramWidget.cpp ../MassSpecAimbot/Dialog/ChromatagramWidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgetsDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCore \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCoreDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig-bootstrapped.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtcore-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsystemdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qprocessordetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcompilerdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtypeinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainerfwd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsysinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlogging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qflags.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbasicatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_bootstrap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qgenericatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_cxx11.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobalstatic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnumeric.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qversiontagging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnamespace.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtmetamacros.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstring.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qchar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrefcount.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpair.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydatapointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydataops.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainertools_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringliteral.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qanystringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qutf8stringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringtokenizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringbuilder.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qhashfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearraylist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringmatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetatype.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcompare.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvarlengtharray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopeguard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdatastream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiodevicebase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetacontainer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainerinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtaggedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmath.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobject_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qproperty.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qshareddata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpropertyprivate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstracteventdispatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qeventloop.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractitemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qhash.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvariant.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qshareddata_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdebug.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtextstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringconverter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontiguouscache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractnativeeventfilter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qapplicationpermission.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qassociativeiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbasictimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbitarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbuffer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiodevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearraymatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcalendar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlocale.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborvalue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdatetime.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborcommon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qregularexpression.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qurl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/quuid.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcbormap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstreamreader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfloat16.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstreamwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcollator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcommandlineoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcommandlineparser.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfutureinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qresultstore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuture_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthreadpool.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthread.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdeadlinetimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qelapsedtimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrunnable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qexception.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnativeinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qloggingcategory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreapplication_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcryptographichash.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdir.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfiledevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfileinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdiriterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qeasingcurve.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qendian.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfactoryinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfileselector.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QObject \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QStringList \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfilesystemwatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuturesynchronizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuturewatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qidentityproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qitemselectionmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjnienvironment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QScopedPointer \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjniobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonvalue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsondocument.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlibrary.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlibraryinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qversionnumber.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qline.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpoint.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlockfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmargins.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmessageauthenticationcode.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetaobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimedata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimedatabase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimetype.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectcleanuphandler.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qoperatingsystemversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qparallelanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpauseanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpluginloader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qprocess.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpromise.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpropertyanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvariantanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qqueue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrandom.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qreadwritelock.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrect.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsize.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qresource.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsavefile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopedvaluerollback.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsemaphore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsequentialanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsequentialiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsettings.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedmemory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsignalmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsimd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsocketnotifier.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsortfilterproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstandardpaths.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstorageinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringlistmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsystemsemaphore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtemporarydir.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtemporaryfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtextboundaryfinder.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthreadstorage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimeline.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimezone.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtranslator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtransposeproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qurlquery.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvector.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qwaitcondition.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QDeadlineTimer \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qwineventnotifier.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qxmlstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtcoreversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QtGui \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QtGuiDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qabstractfileiconprovider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qicon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindowdefs.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindowdefs_win.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgb.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgba64.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixelformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpolygon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qregion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qeventpoint.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector2d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvectornd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpointingdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qinputdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qscreen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRect \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSize \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSizeF \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QTransform \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qkeysequence.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qglyphrun.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrawfont.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfont.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontdatabase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextcursor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbrush.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocument.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpalette.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessible.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessiblebridge.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessibleobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessibleplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qactiongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbackingstore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QEvent \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMargins \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsurface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsurfaceformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcursor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbitmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qclipboard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolorspace.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolortransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qdesktopservices.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qdrag.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfilesystemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontmetrics.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericmatrix.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericpluginfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qguiapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qinputmethod.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qguiapplication_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qiconengine.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qiconengineplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimageiohandler.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimagereader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimagewriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qmatrix4x4.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector3d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector4d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qquaternion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qmovie.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qoffscreensurface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qoffscreensurface_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopengl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qt_windows.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopengles2ext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglcontext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QSurfaceFormat \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglcontext_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglextrafunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagedpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagelayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagesize.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpageranges.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintdevicewindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QWindow \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPaintDevice \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintengine.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpainter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpainterpath.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpdfwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpicture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixmapcache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrasterwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPaintDeviceWindow \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgbafloat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsessionmanager.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qshortcut.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstandarditemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstatictext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstylehints.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsyntaxhighlighter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocumentfragment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocumentwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtexttable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qundogroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qundostack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvalidator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtguiversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsizepolicy.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractitemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractspinbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qslider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractslider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtabbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtabwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qrubberband.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qframe.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qaccessiblewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QAction \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qactiongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QActionGroup \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qboxlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgridlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qbuttongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcalendarwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcheckbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolordialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolormap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolumnview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcombobox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcommandlinkbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qpushbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcommonstyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcompleter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdatawidgetmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdatetimeedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdial.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdialogbuttonbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdockwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdrawutil.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qerrormessage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfiledialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfileiconprovider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfilesystemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QFileSystemModel \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfocusframe.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfontcombobox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfontdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qformlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QLayout \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgesture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgesturerecognizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsanchorlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslayoutitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicseffect.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsgridlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsitemanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslinearlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsproxywidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicswidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsscene.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicssceneevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicstransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QVector3D \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QMatrix4x4 \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgroupbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qheaderview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qinputdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlineedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qitemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qitemeditorfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qkeysequenceedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlabel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlcdnumber.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlistview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlistwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmainwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmdiarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmdisubwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmenu.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmenubar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmessagebox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtextedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qprogressbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qprogressdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qproxystyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QCommonStyle \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qradiobutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscroller.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QPointF \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QScrollerProperties \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollerproperties.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMetaType \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QVariant \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qshortcut.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QShortcut \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsizegrip.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qspinbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsplashscreen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsplitter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstackedlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstackedwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstatusbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleditemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstylefactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstylepainter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsystemtrayicon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtableview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtablewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtextbrowser.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtooltip.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreeview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreewidgetitemiterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundogroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QUndoGroup \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundostack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QUndoStack \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundoview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwhatsthis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwidgetaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwizard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgetsversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QChart \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qchart.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAbstractSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qabstractseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QChartGlobal \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qchartglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qtcharts-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAbstractAxis \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qabstractaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPen \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QFont \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLegend \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlegend.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QGraphicsWidget \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QBrush \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QChartView \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qchartview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QGraphicsView \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QValueAxis \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvalueaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLineSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlineseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QXYSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qxyseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QImage \
+		../MassSpecAimbot/Dialog/ChartView.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QtCharts \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QtChartsDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/QtOpenGL \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/QtOpenGLDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qtopenglglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglbuffer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengldebug.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglframebufferobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglpixeltransferoptions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSharedDataPointer \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglshaderprogram.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengltexture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengltextureblitter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QMatrix3x3 \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopengltimerquery.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglversionfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglversionfunctionsfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglversionprofile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QPair \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglvertexarrayobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qopenglwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QOpenGLContext \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGL/qtopenglversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/QtOpenGLWidgets \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/QtOpenGLWidgetsDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/qopenglwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QWidget \
+		/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets/qtopenglwidgetsversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qabstractbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qarealegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLegendMarker \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAreaSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qareaseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarcategoryaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarlegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QAbstractBarSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBarSet \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxplotlegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBoxPlotSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxplotseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBoxSet \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qboxplotmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlesticklegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QCandlestickSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlestickseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlestickmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcandlestickset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcategoryaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qcoloraxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qdatetimeaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhbarmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBarModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhboxplotmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QBoxPlotModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhcandlestickmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QCandlestickModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhorizontalbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhorizontalpercentbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhorizontalstackedbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhpiemodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QPieModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpiemodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qhxymodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QXYModelMapper \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qxymodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qlogvalueaxis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpercentbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpielegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QPieSeries \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpieseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QPieSlice \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpieslice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qpolarchart.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qscatterseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qsplineseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qstackedbarseries.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvbarmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvboxplotmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvcandlestickmodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvpiemodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qvxymodelmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qxylegendmarker.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/qtchartsversion.h \
+		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
+		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.h \
+		../MassSpecAimbot/Utility/DataContainer/Chemestry.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QString \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h \
+		../MassSpecAimbot/Dialog/TICWidget.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLogValueAxis
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ChromatagramWidget.o ../MassSpecAimbot/Dialog/ChromatagramWidget.cpp
 
 CompoundGroupWidget.o: ../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp ../MassSpecAimbot/Dialog/CompoundGroupWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
@@ -8765,6 +10018,7 @@ IntegrationWindow.o: ../MassSpecAimbot/Dialog/IntegrationWindow.cpp ../MassSpecA
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -8786,6 +10040,8 @@ IntegrationWindow.o: ../MassSpecAimbot/Dialog/IntegrationWindow.cpp ../MassSpecA
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QProgressBar \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.h \
 		../MassSpecAimbot/Utility/FileReader/mzXMLReader.h \
+		../MassSpecAimbot/Utility/ExampleFile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QThread \
 		../MassSpecAimbot/Utility/FileReader/CSVHelper.h \
 		../MassSpecAimbot/Dialog/exportfiledialog.h \
@@ -9890,6 +11146,7 @@ SpectraFileHandler.o: ../MassSpecAimbot/Dialog/SpectraFileHandler.cpp ../MassSpe
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -10305,6 +11562,8 @@ SpectraFileHandler.o: ../MassSpecAimbot/Dialog/SpectraFileHandler.cpp ../MassSpe
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.h \
 		../MassSpecAimbot/Utility/FileReader/mzXMLReader.h \
+		../MassSpecAimbot/Utility/ExampleFile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QThread \
 		../MassSpecAimbot/Utility/Golay.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QFileDialog \
@@ -10908,6 +12167,7 @@ TICWidget.o: ../MassSpecAimbot/Dialog/TICWidget.cpp ../MassSpecAimbot/Dialog/TIC
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -10920,6 +12180,7 @@ TICWidget.o: ../MassSpecAimbot/Dialog/TICWidget.cpp ../MassSpecAimbot/Dialog/TIC
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
+		../MassSpecAimbot/Dialog/ChromatagramWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLogValueAxis
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TICWidget.o ../MassSpecAimbot/Dialog/TICWidget.cpp
 
@@ -11062,6 +12323,7 @@ blankwindow.o: ../MassSpecAimbot/Dialog/blankwindow.cpp ../MassSpecAimbot/Dialog
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlocale.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -11922,6 +13184,59 @@ Chemestry.o: ../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp ../MassSpecAi
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Chemestry.o ../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp
+
+Chromatogram.o: ../MassSpecAimbot/Utility/DataContainer/Chromatogram.cpp ../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydatapointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydataops.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpair.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig-bootstrapped.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtcore-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsystemdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qprocessordetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcompilerdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtypeinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainerfwd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsysinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlogging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qflags.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbasicatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_bootstrap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qgenericatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_cxx11.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobalstatic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnumeric.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qversiontagging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainertools_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnamespace.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtmetamacros.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qhashfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstring.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qchar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrefcount.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringliteral.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qanystringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qutf8stringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringtokenizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringbuilder.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearraylist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringmatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Chromatogram.o ../MassSpecAimbot/Utility/DataContainer/Chromatogram.cpp
 
 CompoundGroup.o: ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.cpp ../MassSpecAimbot/Utility/DataContainer/Chemestry.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QString \
@@ -15419,6 +16734,7 @@ MSABExperiment.o: ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.cpp ../
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -15885,6 +17201,503 @@ Spectra.o: ../MassSpecAimbot/Utility/DataContainer/Spectra.cpp ../MassSpecAimbot
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Spectra.o ../MassSpecAimbot/Utility/DataContainer/Spectra.cpp
+
+ExampleFile.o: ../MassSpecAimbot/Utility/ExampleFile.cpp ../MassSpecAimbot/Utility/ExampleFile.h \
+		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdatetime.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstring.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qchar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig-bootstrapped.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconfig.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtcore-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsystemdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qprocessordetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcompilerdetection.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtypeinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainerfwd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsysinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlogging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qflags.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbasicatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_bootstrap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qgenericatomic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qatomic_cxx11.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qglobalstatic.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnumeric.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qversiontagging.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrefcount.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnamespace.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtmetamacros.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpair.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydatapointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qarraydataops.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainertools_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearrayview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringliteral.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qanystringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qutf8stringview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringtokenizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringbuilder.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qshareddata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qhashfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcalendar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlocale.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvariant.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearraylist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qalgorithms.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringmatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetatype.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcompare.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvarlengtharray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopeguard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdatastream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiodevicebase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetacontainer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontainerinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtaggedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmath.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qshareddata_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qhash.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobject_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qproperty.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpropertyprivate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdebug.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtextstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringconverter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qset.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcontiguouscache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
+		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgetsDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCore \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCoreDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstracteventdispatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qeventloop.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractitemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractnativeeventfilter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qabstractproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qapplicationpermission.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qassociativeiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbasictimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbitarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbuffer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qiodevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qbytearraymatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborvalue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborcommon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qregularexpression.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qurl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/quuid.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcbormap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstreamreader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfloat16.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcborstreamwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcollator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcommandlineoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcommandlineparser.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfutureinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qresultstore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuture_impl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthreadpool.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthread.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdeadlinetimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qelapsedtimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrunnable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qexception.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpointer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qnativeinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qloggingcategory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcoreapplication_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qcryptographichash.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdir.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfiledevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfileinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qdiriterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qeasingcurve.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qendian.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfactoryinterface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfileselector.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QObject \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QStringList \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfilesystemwatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuturesynchronizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qfuturewatcher.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qidentityproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qitemselectionmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjnienvironment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QScopedPointer \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjniobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonarray.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonvalue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsondocument.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qjsonobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlibrary.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlibraryinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qversionnumber.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qline.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpoint.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qlockfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmargins.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmessageauthenticationcode.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmetaobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimedata.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimedatabase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmimetype.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qobjectcleanuphandler.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qoperatingsystemversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qparallelanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpauseanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpluginloader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qprocess.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpromise.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qpropertyanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvariantanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qqueue.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrandom.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qreadwritelock.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qrect.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsize.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qresource.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsavefile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qscopedvaluerollback.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsemaphore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsequentialanimationgroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsequentialiterable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsettings.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedmemory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsignalmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsimd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsocketnotifier.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsortfilterproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstandardpaths.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstorageinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qstringlistmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsystemsemaphore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtemporarydir.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtemporaryfile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtextboundaryfinder.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qthreadstorage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimeline.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtimezone.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtranslator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtransposeproxymodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qurlquery.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qvector.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qwaitcondition.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QDeadlineTimer \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qwineventnotifier.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qxmlstream.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qtcoreversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QtGui \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QtGuiDepends \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qabstractfileiconprovider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qicon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindowdefs.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindowdefs_win.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgb.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgba64.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixelformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpolygon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qregion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qeventpoint.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector2d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvectornd.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpointingdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qinputdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qscreen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRect \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSize \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSizeF \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QTransform \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qkeysequence.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qglyphrun.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrawfont.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfont.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontdatabase.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextcursor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbrush.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocument.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpalette.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessible.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessiblebridge.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessibleobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaccessibleplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qactiongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbackingstore.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QEvent \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMargins \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsurface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsurfaceformat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcursor.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qbitmap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qclipboard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolorspace.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qcolortransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qdesktopservices.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qdrag.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfilesystemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontinfo.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qfontmetrics.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericmatrix.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qgenericpluginfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qguiapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qinputmethod.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qguiapplication_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qiconengine.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qiconengineplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimageiohandler.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimagereader.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qimagewriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qmatrix4x4.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector3d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvector4d.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qquaternion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qmovie.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qoffscreensurface.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qoffscreensurface_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopengl.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/qt_windows.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopengles2ext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglcontext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QSurfaceFormat \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglcontext_platform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglextrafunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qopenglfunctions.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagedpaintdevice.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagelayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpagesize.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpageranges.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintdevicewindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QWindow \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPaintDevice \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpaintengine.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpainter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpainterpath.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpdfwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpicture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qpixmapcache.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrasterwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QPaintDeviceWindow \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qrgbafloat.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsessionmanager.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qshortcut.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstandarditemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstatictext.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qstylehints.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qsyntaxhighlighter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextobject.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocumentfragment.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextdocumentwriter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtextlist.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtexttable.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qundogroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qundostack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qvalidator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/qtguiversion.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsizepolicy.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractitemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleoption.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractspinbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qslider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractslider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtabbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtabwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qrubberband.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qframe.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qaccessiblewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QAction \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qactiongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QActionGroup \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qapplication.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qboxlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgridlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qbuttongroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcalendarwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcheckbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolordialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolormap.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcolumnview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcombobox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcommandlinkbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qpushbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcommonstyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qcompleter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdatawidgetmapper.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdatetimeedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdial.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdialogbuttonbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdockwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qdrawutil.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qerrormessage.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfiledialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfileiconprovider.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfilesystemmodel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QFileSystemModel \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfocusframe.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfontcombobox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qfontdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qformlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QLayout \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgesture.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgesturerecognizer.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsanchorlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslayoutitem.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicseffect.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsgridlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsitemanimation.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicslinearlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsproxywidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicswidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsscene.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicssceneevent.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicstransform.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QVector3D \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QMatrix4x4 \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgraphicsview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qgroupbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qheaderview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qinputdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlineedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qitemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qitemeditorfactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qkeysequenceedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlabel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlcdnumber.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlistview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qlistwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmainwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmdiarea.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmdisubwindow.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmenu.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmenubar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qmessagebox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtextedit.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qprogressbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qprogressdialog.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qproxystyle.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QCommonStyle \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qradiobutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscroller.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QPointF \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QScrollerProperties \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qscrollerproperties.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMetaType \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QVariant \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qshortcut.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QShortcut \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsizegrip.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qspinbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsplashscreen.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsplitter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstackedlayout.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstackedwidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstatusbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleditemdelegate.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstylefactory.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstylepainter.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qstyleplugin.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qsystemtrayicon.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtableview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtablewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtextbrowser.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbar.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbox.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtoolbutton.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtooltip.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreeview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreewidget.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtreewidgetitemiterator.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundogroup.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QUndoGroup \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundostack.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtGui/QUndoStack \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qundoview.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwhatsthis.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwidgetaction.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qwizard.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/qtwidgetsversion.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.h \
+		../MassSpecAimbot/Utility/DataContainer/Chemestry.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QString \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h \
+		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRandomGenerator
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ExampleFile.o ../MassSpecAimbot/Utility/ExampleFile.cpp
 
 CSVHelper.o: ../MassSpecAimbot/Utility/FileReader/CSVHelper.cpp ../MassSpecAimbot/Utility/FileReader/CSVHelper.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
@@ -16548,6 +18361,7 @@ mzMLReader.o: ../MassSpecAimbot/Utility/FileReader/mzMLReader.cpp ../MassSpecAim
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer_impl.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -17045,6 +18859,7 @@ mzXMLReader.o: ../MassSpecAimbot/Utility/FileReader/mzXMLReader.cpp ../MassSpecA
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qsharedpointer_impl.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -17544,6 +19359,7 @@ MethodFileHandler.o: ../MassSpecAimbot/Utility/MethodFileHandler.cpp ../MassSpec
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QList \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/qmutex.h \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -18556,6 +20372,7 @@ main.o: ../MassSpecAimbot/main.cpp ../MassSpecAimbot/Dialog/IntegrationWindow.h 
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -18577,6 +20394,8 @@ main.o: ../MassSpecAimbot/main.cpp ../MassSpecAimbot/Dialog/IntegrationWindow.h 
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QProgressBar \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.h \
 		../MassSpecAimbot/Utility/FileReader/mzXMLReader.h \
+		../MassSpecAimbot/Utility/ExampleFile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QThread \
 		../MassSpecAimbot/Utility/FileReader/CSVHelper.h \
 		../MassSpecAimbot/Dialog/blankwindow.h \
@@ -19183,6 +21002,7 @@ mainwindow.o: ../MassSpecAimbot/mainwindow.cpp ../MassSpecAimbot/mainwindow.h \
 		../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QTime \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMutex \
+		../MassSpecAimbot/Utility/DataContainer/Chromatogram.h \
 		../MassSpecAimbot/Utility/DataContainer/Spectra.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QSet \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QMap \
@@ -19204,6 +21024,8 @@ mainwindow.o: ../MassSpecAimbot/mainwindow.cpp ../MassSpecAimbot/mainwindow.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QProgressBar \
 		../MassSpecAimbot/Utility/FileReader/mzMLReader.h \
 		../MassSpecAimbot/Utility/FileReader/mzXMLReader.h \
+		../MassSpecAimbot/Utility/ExampleFile.h \
+		/opt/Qt/6.2.0/wasm_32/include/QtCore/QRandomGenerator \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QThread \
 		../MassSpecAimbot/Utility/FileReader/CSVHelper.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../MassSpecAimbot/mainwindow.cpp
@@ -19213,6 +21035,9 @@ massspecaimbot.js_plugin_import.o: /home/jay/Code/QTCreator/MassSpecAimbot-WASM/
 
 moc_ChartView.o: moc_ChartView.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ChartView.o moc_ChartView.cpp
+
+moc_ChromatagramWidget.o: moc_ChromatagramWidget.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ChromatagramWidget.o moc_ChromatagramWidget.cpp
 
 moc_CompoundGroupWidget.o: moc_CompoundGroupWidget.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CompoundGroupWidget.o moc_CompoundGroupWidget.cpp
