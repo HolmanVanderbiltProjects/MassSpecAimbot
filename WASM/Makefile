@@ -53,7 +53,7 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
-		../MassSpecAimbot/Dialog/ChromatagramWidget.cpp \
+		../MassSpecAimbot/Dialog/ChromatogramWidget.cpp \
 		../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp \
 		../MassSpecAimbot/Dialog/IntegrationWindow.cpp \
 		../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp \
@@ -85,7 +85,7 @@ SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
 		../MassSpecAimbot/main.cpp \
 		../MassSpecAimbot/mainwindow.cpp /home/jay/Code/QTCreator/MassSpecAimbot-WASM/build-MassSpecAimbot-Qt_6_2_0_WebAssembly-Release/massspecaimbot.js_plugin_import.cpp \
 		moc_ChartView.cpp \
-		moc_ChromatagramWidget.cpp \
+		moc_ChromatogramWidget.cpp \
 		moc_CompoundGroupWidget.cpp \
 		moc_IntegrationWindow.cpp \
 		moc_NewCompoundGroupIonWindow.cpp \
@@ -98,7 +98,7 @@ SOURCES       = ../MassSpecAimbot/Dialog/ChartView.cpp \
 		moc_CompoundGroupModel.cpp \
 		moc_mainwindow.cpp
 OBJECTS       = ChartView.o \
-		ChromatagramWidget.o \
+		ChromatogramWidget.o \
 		CompoundGroupWidget.o \
 		IntegrationWindow.o \
 		NewCompoundGroupIonWindow.o \
@@ -131,7 +131,7 @@ OBJECTS       = ChartView.o \
 		mainwindow.o \
 		massspecaimbot.js_plugin_import.o \
 		moc_ChartView.o \
-		moc_ChromatagramWidget.o \
+		moc_ChromatogramWidget.o \
 		moc_CompoundGroupWidget.o \
 		moc_IntegrationWindow.o \
 		moc_NewCompoundGroupIonWindow.o \
@@ -334,7 +334,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		/opt/Qt/6.2.0/wasm_32/mkspecs/features/yacc.prf \
 		/opt/Qt/6.2.0/wasm_32/mkspecs/features/lex.prf \
 		../MassSpecAimbot/MassSpecAimbot.pro ../MassSpecAimbot/Dialog/ChartView.h \
-		../MassSpecAimbot/Dialog/ChromatagramWidget.h \
+		../MassSpecAimbot/Dialog/ChromatogramWidget.h \
 		../MassSpecAimbot/Dialog/CompoundGroupWidget.h \
 		../MassSpecAimbot/Dialog/IntegrationWindow.h \
 		../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.h \
@@ -365,7 +365,7 @@ DIST          = /opt/Qt/6.2.0/wasm_32/mkspecs/features/spec_pre.prf \
 		../MassSpecAimbot/Utility/MethodFileHandler.h \
 		../MassSpecAimbot/Utility/armadillo.h \
 		../MassSpecAimbot/mainwindow.h ../MassSpecAimbot/Dialog/ChartView.cpp \
-		../MassSpecAimbot/Dialog/ChromatagramWidget.cpp \
+		../MassSpecAimbot/Dialog/ChromatogramWidget.cpp \
 		../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp \
 		../MassSpecAimbot/Dialog/IntegrationWindow.cpp \
 		../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp \
@@ -840,8 +840,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /opt/Qt/6.2.0/wasm_32/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.h ../MassSpecAimbot/Dialog/ChromatagramWidget.h ../MassSpecAimbot/Dialog/CompoundGroupWidget.h ../MassSpecAimbot/Dialog/IntegrationWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.h ../MassSpecAimbot/Dialog/SpectraFileHandler.h ../MassSpecAimbot/Dialog/TICWidget.h ../MassSpecAimbot/Dialog/blankwindow.h ../MassSpecAimbot/Dialog/exportfiledialog.h ../MassSpecAimbot/Utility/ArmadilloHelper.h ../MassSpecAimbot/Utility/BinaryHandler.h ../MassSpecAimbot/Utility/DataContainer/Chemestry.h ../MassSpecAimbot/Utility/DataContainer/Chromatogram.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h ../MassSpecAimbot/Utility/DataContainer/Spectra.h ../MassSpecAimbot/Utility/ExampleFile.h ../MassSpecAimbot/Utility/FileReader/CSVHelper.h ../MassSpecAimbot/Utility/FileReader/XCMSFile.h ../MassSpecAimbot/Utility/FileReader/mzMLReader.h ../MassSpecAimbot/Utility/FileReader/mzXMLReader.h ../MassSpecAimbot/Utility/Golay.h ../MassSpecAimbot/Utility/MethodFileHandler.h ../MassSpecAimbot/Utility/armadillo.h ../MassSpecAimbot/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.cpp ../MassSpecAimbot/Dialog/ChromatagramWidget.cpp ../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp ../MassSpecAimbot/Dialog/IntegrationWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.cpp ../MassSpecAimbot/Dialog/SpectraFileHandler.cpp ../MassSpecAimbot/Dialog/TICWidget.cpp ../MassSpecAimbot/Dialog/blankwindow.cpp ../MassSpecAimbot/Dialog/exportfiledialog.cpp ../MassSpecAimbot/Utility/ArmadilloHelper.cpp ../MassSpecAimbot/Utility/BinaryHandler.cpp ../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp ../MassSpecAimbot/Utility/DataContainer/Chromatogram.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.cpp ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.cpp ../MassSpecAimbot/Utility/DataContainer/Spectra.cpp ../MassSpecAimbot/Utility/ExampleFile.cpp ../MassSpecAimbot/Utility/FileReader/CSVHelper.cpp ../MassSpecAimbot/Utility/FileReader/XCMSFile.cpp ../MassSpecAimbot/Utility/FileReader/mzMLReader.cpp ../MassSpecAimbot/Utility/FileReader/mzXMLReader.cpp ../MassSpecAimbot/Utility/Golay.cpp ../MassSpecAimbot/Utility/MethodFileHandler.cpp ../MassSpecAimbot/main.cpp ../MassSpecAimbot/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.h ../MassSpecAimbot/Dialog/ChromatogramWidget.h ../MassSpecAimbot/Dialog/CompoundGroupWidget.h ../MassSpecAimbot/Dialog/IntegrationWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.h ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.h ../MassSpecAimbot/Dialog/SpectraFileHandler.h ../MassSpecAimbot/Dialog/TICWidget.h ../MassSpecAimbot/Dialog/blankwindow.h ../MassSpecAimbot/Dialog/exportfiledialog.h ../MassSpecAimbot/Utility/ArmadilloHelper.h ../MassSpecAimbot/Utility/BinaryHandler.h ../MassSpecAimbot/Utility/DataContainer/Chemestry.h ../MassSpecAimbot/Utility/DataContainer/Chromatogram.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.h ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.h ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.h ../MassSpecAimbot/Utility/DataContainer/Spectra.h ../MassSpecAimbot/Utility/ExampleFile.h ../MassSpecAimbot/Utility/FileReader/CSVHelper.h ../MassSpecAimbot/Utility/FileReader/XCMSFile.h ../MassSpecAimbot/Utility/FileReader/mzMLReader.h ../MassSpecAimbot/Utility/FileReader/mzXMLReader.h ../MassSpecAimbot/Utility/Golay.h ../MassSpecAimbot/Utility/MethodFileHandler.h ../MassSpecAimbot/Utility/armadillo.h ../MassSpecAimbot/mainwindow.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../MassSpecAimbot/Dialog/ChartView.cpp ../MassSpecAimbot/Dialog/ChromatogramWidget.cpp ../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp ../MassSpecAimbot/Dialog/IntegrationWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupIonWindow.cpp ../MassSpecAimbot/Dialog/NewCompoundGroupWindow.cpp ../MassSpecAimbot/Dialog/SpectraFileHandler.cpp ../MassSpecAimbot/Dialog/TICWidget.cpp ../MassSpecAimbot/Dialog/blankwindow.cpp ../MassSpecAimbot/Dialog/exportfiledialog.cpp ../MassSpecAimbot/Utility/ArmadilloHelper.cpp ../MassSpecAimbot/Utility/BinaryHandler.cpp ../MassSpecAimbot/Utility/DataContainer/Chemestry.cpp ../MassSpecAimbot/Utility/DataContainer/Chromatogram.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupRow.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IonLabel.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/IsotopomerGroup.cpp ../MassSpecAimbot/Utility/DataContainer/CompoundGroup/ModifiedIon.cpp ../MassSpecAimbot/Utility/DataContainer/MSABExperiment.cpp ../MassSpecAimbot/Utility/DataContainer/Spectra.cpp ../MassSpecAimbot/Utility/ExampleFile.cpp ../MassSpecAimbot/Utility/FileReader/CSVHelper.cpp ../MassSpecAimbot/Utility/FileReader/XCMSFile.cpp ../MassSpecAimbot/Utility/FileReader/mzMLReader.cpp ../MassSpecAimbot/Utility/FileReader/mzXMLReader.cpp ../MassSpecAimbot/Utility/Golay.cpp ../MassSpecAimbot/Utility/MethodFileHandler.cpp ../MassSpecAimbot/main.cpp ../MassSpecAimbot/mainwindow.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -893,9 +893,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /opt/Qt/6.2.0/wasm_32/mkspecs/features/data/dummy.cpp
 	em++ -pipe -O2 -std=gnu++1z -s ALLOW_MEMORY_GROWTH=1 -Wall -Wextra -dM -E -o moc_predefs.h /opt/Qt/6.2.0/wasm_32/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_ChartView.cpp moc_ChromatagramWidget.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
+compiler_moc_header_make_all: moc_ChartView.cpp moc_ChromatogramWidget.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_ChartView.cpp moc_ChromatagramWidget.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
+	-$(DEL_FILE) moc_ChartView.cpp moc_ChromatogramWidget.cpp moc_CompoundGroupWidget.cpp moc_IntegrationWindow.cpp moc_NewCompoundGroupIonWindow.cpp moc_NewCompoundGroupWindow.cpp moc_SpectraFileHandler.cpp moc_TICWidget.cpp moc_blankwindow.cpp moc_exportfiledialog.cpp moc_CompoundGroup.cpp moc_CompoundGroupModel.cpp moc_mainwindow.cpp
 moc_ChartView.cpp: ../MassSpecAimbot/Dialog/ChartView.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgetsDepends \
@@ -1505,7 +1505,7 @@ moc_ChartView.cpp: ../MassSpecAimbot/Dialog/ChartView.h \
 		/opt/Qt/6.2.0/gcc_64/libexec/moc
 	/opt/Qt/6.2.0/gcc_64/libexec/moc $(DEFINES) --include /home/jay/Code/QTCreator/MassSpecAimbot-WASM/build-MassSpecAimbot-Qt_6_2_0_WebAssembly-Release/moc_predefs.h -I/opt/Qt/6.2.0/wasm_32/mkspecs/wasm-emscripten -I/home/jay/Code/QTCreator/MassSpecAimbot-WASM/MassSpecAimbot -I/opt/Qt/6.2.0/wasm_32/include -I/opt/Qt/6.2.0/wasm_32/include/QtCharts -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGL -I/opt/Qt/6.2.0/wasm_32/include/QtGui -I/opt/Qt/6.2.0/wasm_32/include/QtCore -I. ../MassSpecAimbot/Dialog/ChartView.h -o moc_ChartView.cpp
 
-moc_ChromatagramWidget.cpp: ../MassSpecAimbot/Dialog/ChromatagramWidget.h \
+moc_ChromatogramWidget.cpp: ../MassSpecAimbot/Dialog/ChromatogramWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgetsDepends \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCore \
@@ -2118,7 +2118,7 @@ moc_ChromatagramWidget.cpp: ../MassSpecAimbot/Dialog/ChromatagramWidget.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
 		moc_predefs.h \
 		/opt/Qt/6.2.0/gcc_64/libexec/moc
-	/opt/Qt/6.2.0/gcc_64/libexec/moc $(DEFINES) --include /home/jay/Code/QTCreator/MassSpecAimbot-WASM/build-MassSpecAimbot-Qt_6_2_0_WebAssembly-Release/moc_predefs.h -I/opt/Qt/6.2.0/wasm_32/mkspecs/wasm-emscripten -I/home/jay/Code/QTCreator/MassSpecAimbot-WASM/MassSpecAimbot -I/opt/Qt/6.2.0/wasm_32/include -I/opt/Qt/6.2.0/wasm_32/include/QtCharts -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGL -I/opt/Qt/6.2.0/wasm_32/include/QtGui -I/opt/Qt/6.2.0/wasm_32/include/QtCore -I. ../MassSpecAimbot/Dialog/ChromatagramWidget.h -o moc_ChromatagramWidget.cpp
+	/opt/Qt/6.2.0/gcc_64/libexec/moc $(DEFINES) --include /home/jay/Code/QTCreator/MassSpecAimbot-WASM/build-MassSpecAimbot-Qt_6_2_0_WebAssembly-Release/moc_predefs.h -I/opt/Qt/6.2.0/wasm_32/mkspecs/wasm-emscripten -I/home/jay/Code/QTCreator/MassSpecAimbot-WASM/MassSpecAimbot -I/opt/Qt/6.2.0/wasm_32/include -I/opt/Qt/6.2.0/wasm_32/include/QtCharts -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGLWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtWidgets -I/opt/Qt/6.2.0/wasm_32/include/QtOpenGL -I/opt/Qt/6.2.0/wasm_32/include/QtGui -I/opt/Qt/6.2.0/wasm_32/include/QtCore -I. ../MassSpecAimbot/Dialog/ChromatogramWidget.h -o moc_ChromatogramWidget.cpp
 
 moc_CompoundGroupWidget.cpp: ../MassSpecAimbot/Dialog/CompoundGroupWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
@@ -8309,7 +8309,7 @@ ChartView.o: ../MassSpecAimbot/Dialog/ChartView.cpp ../MassSpecAimbot/Dialog/Cha
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ChartView.o ../MassSpecAimbot/Dialog/ChartView.cpp
 
-ChromatagramWidget.o: ../MassSpecAimbot/Dialog/ChromatagramWidget.cpp ../MassSpecAimbot/Dialog/ChromatagramWidget.h \
+ChromatogramWidget.o: ../MassSpecAimbot/Dialog/ChromatogramWidget.cpp ../MassSpecAimbot/Dialog/ChromatogramWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgetsDepends \
 		/opt/Qt/6.2.0/wasm_32/include/QtCore/QtCore \
@@ -8921,7 +8921,7 @@ ChromatagramWidget.o: ../MassSpecAimbot/Dialog/ChromatagramWidget.cpp ../MassSpe
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLogValueAxis
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ChromatagramWidget.o ../MassSpecAimbot/Dialog/ChromatagramWidget.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ChromatogramWidget.o ../MassSpecAimbot/Dialog/ChromatogramWidget.cpp
 
 CompoundGroupWidget.o: ../MassSpecAimbot/Dialog/CompoundGroupWidget.cpp ../MassSpecAimbot/Dialog/CompoundGroupWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtWidgets/QtWidgets \
@@ -12188,7 +12188,7 @@ TICWidget.o: ../MassSpecAimbot/Dialog/TICWidget.cpp ../MassSpecAimbot/Dialog/TIC
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupIon.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroup.h \
 		../MassSpecAimbot/Utility/DataContainer/CompoundGroup/CompoundGroupModel.h \
-		../MassSpecAimbot/Dialog/ChromatagramWidget.h \
+		../MassSpecAimbot/Dialog/ChromatogramWidget.h \
 		/opt/Qt/6.2.0/wasm_32/include/QtCharts/QLogValueAxis
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TICWidget.o ../MassSpecAimbot/Dialog/TICWidget.cpp
 
@@ -21669,8 +21669,8 @@ massspecaimbot.js_plugin_import.o: /home/jay/Code/QTCreator/MassSpecAimbot-WASM/
 moc_ChartView.o: moc_ChartView.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ChartView.o moc_ChartView.cpp
 
-moc_ChromatagramWidget.o: moc_ChromatagramWidget.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ChromatagramWidget.o moc_ChromatagramWidget.cpp
+moc_ChromatogramWidget.o: moc_ChromatogramWidget.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ChromatogramWidget.o moc_ChromatogramWidget.cpp
 
 moc_CompoundGroupWidget.o: moc_CompoundGroupWidget.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CompoundGroupWidget.o moc_CompoundGroupWidget.cpp
