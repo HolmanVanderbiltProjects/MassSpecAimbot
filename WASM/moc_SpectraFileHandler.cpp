@@ -171,8 +171,8 @@ void MSAB::SpectraFileWorker::resultReady(int _t1)
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 struct qt_meta_stringdata_MSAB__SpectraFileHandler_t {
-    const uint offsetsAndSize[44];
-    char stringdata0[399];
+    const uint offsetsAndSize[46];
+    char stringdata0[410];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MSAB__SpectraFileHandler_t, stringdata0) + ofs), len 
@@ -199,7 +199,8 @@ QT_MOC_LITERAL(285, 11), // "rowSelected"
 QT_MOC_LITERAL(297, 22), // "UpdateMethodCacheModel"
 QT_MOC_LITERAL(320, 43), // "QMap<QString,QSharedPointer<C..."
 QT_MOC_LITERAL(364, 11), // "newValueMap"
-QT_MOC_LITERAL(376, 22) // "currentlySelectedGroup"
+QT_MOC_LITERAL(376, 22), // "currentlySelectedGroup"
+QT_MOC_LITERAL(399, 10) // "AuditFiles"
 
     },
     "MSAB::SpectraFileHandler\0ExperimentSelected\0"
@@ -212,7 +213,8 @@ QT_MOC_LITERAL(376, 22) // "currentlySelectedGroup"
     "workerResultReady\0rowSelected\0"
     "UpdateMethodCacheModel\0"
     "QMap<QString,QSharedPointer<CompoundGroup>>\0"
-    "newValueMap\0currentlySelectedGroup"
+    "newValueMap\0currentlySelectedGroup\0"
+    "AuditFiles"
 };
 #undef QT_MOC_LITERAL
 
@@ -222,7 +224,7 @@ static const uint qt_meta_data_MSAB__SpectraFileHandler[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   14, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -230,19 +232,20 @@ static const uint qt_meta_data_MSAB__SpectraFileHandler[] = {
        3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   80,    2, 0x06,    1 /* Public */,
-       4,    1,   83,    2, 0x06,    3 /* Public */,
-       6,    1,   86,    2, 0x06,    5 /* Public */,
+       1,    1,   86,    2, 0x06,    1 /* Public */,
+       4,    1,   89,    2, 0x06,    3 /* Public */,
+       6,    1,   92,    2, 0x06,    5 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       9,    0,   89,    2, 0x0a,    7 /* Public */,
-      10,    1,   90,    2, 0x0a,    8 /* Public */,
-      13,    0,   93,    2, 0x0a,   10 /* Public */,
-      14,    1,   94,    2, 0x0a,   11 /* Public */,
-      15,    0,   97,    2, 0x0a,   13 /* Public */,
-      16,    1,   98,    2, 0x0a,   14 /* Public */,
-      17,    0,  101,    2, 0x0a,   16 /* Public */,
-      18,    2,  102,    2, 0x0a,   17 /* Public */,
+       9,    0,   95,    2, 0x0a,    7 /* Public */,
+      10,    1,   96,    2, 0x0a,    8 /* Public */,
+      13,    0,   99,    2, 0x0a,   10 /* Public */,
+      14,    1,  100,    2, 0x0a,   11 /* Public */,
+      15,    0,  103,    2, 0x0a,   13 /* Public */,
+      16,    1,  104,    2, 0x0a,   14 /* Public */,
+      17,    0,  107,    2, 0x0a,   16 /* Public */,
+      18,    2,  108,    2, 0x0a,   17 /* Public */,
+      22,    0,  113,    2, 0x0a,   20 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int,    3,
@@ -258,6 +261,7 @@ static const uint qt_meta_data_MSAB__SpectraFileHandler[] = {
     QMetaType::Void, QMetaType::Int,    3,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 19, QMetaType::QString,   20,   21,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -280,6 +284,7 @@ void MSAB::SpectraFileHandler::qt_static_metacall(QObject *_o, QMetaObject::Call
         case 8: _t->workerResultReady((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 9: _t->rowSelected(); break;
         case 10: _t->UpdateMethodCacheModel((*reinterpret_cast< QMap<QString,QSharedPointer<CompoundGroup>>(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 11: _t->AuditFiles(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -316,7 +321,7 @@ const QMetaObject MSAB::SpectraFileHandler::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_MSAB__SpectraFileHandler_t
 , QtPrivate::TypeAndForceComplete<SpectraFileHandler, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QMap<int,QSharedPointer<MSABExperiment>> &, std::false_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<ExampleFile::ExampleType, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<bool, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QMap<QString,QSharedPointer<CompoundGroup>>, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<ExampleFile::ExampleType, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<bool, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QMap<QString,QSharedPointer<CompoundGroup>>, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -343,13 +348,13 @@ int MSAB::SpectraFileHandler::qt_metacall(QMetaObject::Call _c, int _id, void **
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 12;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 11;
+        _id -= 12;
     }
     return _id;
 }
